@@ -20,6 +20,27 @@ After dropping columns we turned our dates to only have the Month (1-12) and Tim
 
 Our final data set after all cleaning has the following 17 features:
 
+|Variable|Description|
+|:-|:-|
+|month|Month (1-12) of occurrence for the reported event|
+|time_of_day|Time of occurrence for the reported event (1= morning: 5 AM - Noon, 2= afternoon: Noon - 6 PM, 3= evening: 6 PM - 10 PM, 4= night: 10 PM - 5 AM|
+|precinct|  The precinct in which the incident occurred |                   
+|crime_completed|Indicator of whether crime was successfully completed or attempted, but failed or was interrupted prematurely |
+|offense_level   |     Level of offense: felony, misdemeanor, violation|     
+|borough_nam        |       The name of the borough in which the incident occurred|
+|premises   |      Specific description of premises; grocery store, residence, street, etc.|
+|jurisdiction_code       |       Description of the jurisdiction code|
+|latitude    |Midblock Latitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)| 
+|longitude   |Midblock Longitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)
+|vic_age_group       |  Victim’s Age Group| 
+|vic_race             |   Victim’s Race Description|
+|vic_sex        |Victim’s Sex Description (D=Business/Organization, E=PSNY/People of the State of New York, F=Female, M=Male)|
+|suspect_age_group    |  Suspect’s Age Group |
+|suspect_race          | Suspect’s Race Description|
+|suspect_sex            | Suspect’s Sex Description |
+|hadevelopt        |If housing development of occurrence 1= yes, 0=no|
+
+
 ## Exploratory Data Analysis
 
 
