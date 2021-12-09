@@ -40,7 +40,7 @@ Our final data set after all cleaning has the following 17 features:
 |suspect_sex            | Suspect’s Sex Description |
 |hadevelopt        |If housing development of occurrence 1= yes, 0=no|
 
-[DataCleaning.ipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/DataCleaning.ipynb)
+See [DataCleaning.ipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/DataCleaning.ipynb) to see how the data was cleaned fully.
 
 
 ## Exploratory Data Analysis
