@@ -11,7 +11,7 @@ We will use different classification machine learning models to learn from our d
 We will be using the following steps and have used several juypter notebooks in this repository to break up our work that can be easily followed:
 1. Collecting and Cleaning the Data- found in  [DataCleaning.ipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/DataCleaning.ipynb)
 2. Exploring the Data - found in [ExploratoryDataAnalysis.ipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/ExploratoryDataAnalysis%20.ipynb)
-3. Model Prediction and Evaluation - found in [Modelipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/Model.ipynb)
+3. Model Prediction and Evaluation - found in [Model.pynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/Model.ipynb)
 
 ## Data Collection and Cleaning
 As previously mentioned we used NYPD complaint data. We obtained our data using the Socrata API and got 50,000 of the results. From the inital read in from the API we have 40 different features for our data. Many of the features are redundant information, for example a written name of the station number and anoher feature is a numerical number for the same staion number, and we decided to drop them from the data. Additionally we dropped any feature that would inherintly tell us the severity of the crime. 
