@@ -4,7 +4,10 @@ Stat 426 Final Project
 ## Introduction
 Crime across the United States is a constant part of life. However, in the past year and a half there has been a rise in understanding crime as it has to do with racial discrimination and other factors. Often, certain areas are over policed or certain crimes are dealt with more harshly based on factors that are not fully understood. While we cannot fully understand all factors that play apart in crime our project is trying to explore what affects the severity of a crime.
 
-Using data found from historic New York Police Department (NYPD) [complaint report](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i ) we are attempting to classify the severity of a crime, or offense level, based on features such as age, race, location, time of day, and sex for the NYPD.  The data used includes all valid felony, misdemeanor, and violation crimes reported to the NYPD from 2006 to the end of 2019. There are over 7 million different complaints but for this project we will only look at the last 50,000 complaints to ensure our machines can handle the data.
+If we were to boil down our project to one specific question, it would be:
+Based on historical NYPD data, which features are most important in determining the severity of a crime?
+
+Using data found from historic New York Police Department (NYPD) [complaint report](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i ) we are attempting to classify the severity of a crime, or offense level, based on features such as age, race, location, time of day, and sex for the NYPD. The data used includes all valid felony, misdemeanor, and violation crimes reported to the NYPD from 2006 to the end of 2019. There are over 7 million different complaints but for this project we will only look at the last 50,000 complaints to ensure our machines can handle the data.
 
 You should be able to easily reproduce our results from this repository, but you will need to request your own API key from Socrata.
 https://support.socrata.com/hc/en-us/articles/115005364207
