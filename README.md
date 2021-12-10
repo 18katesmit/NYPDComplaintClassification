@@ -78,7 +78,7 @@ In the end, we found that gradient boosting yielded the most accurate model, wit
 |FELONY|0.62|0.14|0.23|3127|
 |MISDEMEANOR|0.56|0.93|0.70|5279|
 |VIOLATION|0.51|0.16|0.25|1594|
-|:-|:-|:-|:-|:-|
+||||||
 |accuracy|||0.56|10000|
 |macro avg|0.56|0.41|0.39|10000|
 |weighted avg|0.57|0.56|0.48|10000|
