@@ -76,9 +76,9 @@ For more in-depth data exploration see [ExploratoryDataAnalysis.ipynb](https://g
 
 ## Model Prediction and Evaluation
 
-For our classification models, we decided to use the methods of Bagging, gradient boosting, and a random forest classifier.
+For our classification models, we decided to use the methods of Bagging, gradient boosting, and a random forest classifier because they are excellent classification models. Additionally we have mostly categorical features and that limits what methods we can use.
 
-In the end, we found that gradient boosting yielded the most accurate model, with 56% accuracy, which is a 23% mporovement over a random guess. 
+In the end, we found that gradient boosting yielded the most accurate model, with 56% accuracy, which is a 23% mporovement over a random guess.
 
 ||precision|recall|f1-score|support|
 |:-|:-|:-|:-|:-|
@@ -99,8 +99,11 @@ The sex or classification of the victim is extremely important. Also, the sex an
 
 ## Conclusion
 
-What we learned summerized and what next steps would be
+Our inital goal was to use different crime compliants to predict the severity of a crim and see what features are the most important. We found a few didferent models that are only moderatly accurate at prediction. However, this is not the most importnat take away. Predicting a crime is not as important at looking at the most important factors. Our results showed that top five features were mainly geared toward victim sex, suspect sex and people whose race is black.  This is similar to what we predictied the most important features would be. 
 
+Prediction of crime severity might not be the mostly helpful result and we think a futue study could be looking at different locations. Determining crime for different areas might be an interesting follow up to what we have done.
+
+Addiotionaly, we think it would be important for all members of the NYPD too look at any bias they might have. Our most imporant features indicated Sex and Race to be the 
 
 
 
