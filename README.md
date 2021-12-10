@@ -6,12 +6,16 @@ Crime across the United States is a constant part of life. However, in the past 
 
 Using data found from historic New York Police Department (NYPD) [complaint report](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i ) we are attempting to classify the severity of a crime, or offense level, based on features such as age, race, location, time of day, and sex for the NYPD.  The data used includes all valid felony, misdemeanor, and violation crimes reported to the NYPD from 2006 to the end of 2019. There are over 7 million different complaints but for this project we will only look at the last 50,000 complaints to ensure our machines can handle the data.
 
+You should be able to easily reproduce our results from this repository, but you will need to request your own API key from Socrata.
+https://support.socrata.com/hc/en-us/articles/115005364207
+Alternatively, you can use the .csv file included in the repository.
+
 We will use different classification machine learning models to learn from our data and then predict the offense level of a Misdemeanor, Felony, or Violation and see which features are the most significant in determining the severity. We think that age, race, and time of day might be factors that help predict severity more significantly than other features.
 
 We will be using the following steps and have used several juypter notebooks in this repository to break up our work that can be easily followed:
 1. Collecting and Cleaning the Data- found in  [DataCleaning.ipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/DataCleaning.ipynb)
 2. Exploring the Data - found in [ExploratoryDataAnalysis.ipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/ExploratoryDataAnalysis%20.ipynb)
-3. Model Prediction and Evaluation - found in [Model.pynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/Model.ipynb)
+3. Model Prediction and Evaluation - found in [Model.ipynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/Model.ipynb)
 
 ## Data Collection and Cleaning
 As previously mentioned we used NYPD complaint data. We obtained our data using the Socrata API and got 50,000 of the results. From the inital read in from the API we have 40 different features for our data. Many of the features are redundant information, for example a written name of a station and a numerical number for the same station number, so we decided to drop them from the data. Additionally we dropped any feature that would inherently tell us the severity of the crime. 
