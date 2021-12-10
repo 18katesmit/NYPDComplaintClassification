@@ -78,7 +78,7 @@ For more in-depth data exploration see [ExploratoryDataAnalysis.ipynb](https://g
 
 For our classification models, we decided to use the methods of Bagging, gradient boosting, and a random forest classifier because they are excellent classification models. Additionally we have mostly categorical features and that limits what methods we can use.
 
-In the end, we found that gradient boosting yielded the most accurate model, with 56% accuracy, which is a 23% mporovement over a random guess.
+In the end, we found that gradient boosting yielded the most accurate model, with 56% accuracy, which is a 23% improvement over a random guess.
 
 ||precision|recall|f1-score|support|
 |:-|:-|:-|:-|:-|
