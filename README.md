@@ -99,11 +99,11 @@ The sex or classification of the victim is extremely important. Also, the sex an
 
 ## Conclusion
 
-Our inital goal was to use different crime compliants to predict the severity of a crim and see what features are the most important. We found a few didferent models that are only moderatly accurate at prediction. However, this is not the most importnat take away. Predicting a crime is not as important at looking at the most important factors. Our results showed that top five features were mainly geared toward victim sex, suspect sex and people whose race is black.  This is similar to what we predictied the most important features would be. 
+Our inital goal was to use different crime compliants to predict the severity of a crime and see which features are the most important. We found a few different models that were only moderately accurate at prediction. However, this is not the most important take away. Predicting a crime is not as important at looking at the most important factors. Our results showed that top five features were mainly geared toward victim sex, suspect sex, and people whose race is black.  This is similar to what we predicted the most important features would be. 
 
-Prediction of crime severity might not be the mostly helpful result and we think a futue study could be looking at different locations. Determining crime for different areas might be an interesting follow up to what we have done.
+Prediction of crime severity might not be the most helpful result, and we think a future study could be conducted looking at different locations. Determining crime for different areas might be an interesting follow up to what we have done.
 
-Addiotionaly, we think it would be important for all members of the NYPD too look at any bias they might have. Our most imporant features indicated Sex and Race to be the 
+Additionally, our evidence suggests that bias, subconscious or otherwise, still exists in our nations police forces. We urge police departments around the country to take steps towards eliminating this bias all citizens experience equal treatment. Proper trainings, procedures, and personnel reviews could achieve significant change.  
 
 
 
