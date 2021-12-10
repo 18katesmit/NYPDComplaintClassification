@@ -4,7 +4,7 @@ Stat 426 Final Project
 ## Introduction
 Crime across the United States is a constant part of life. However, in the past year and a half there has been a rise in understanding crime as it has to do with racial discrimination and other factors. Often, certain areas are over policed or certain crimes are dealt with more harshly based on factors that are not fully understood. While we cannot fully understand all factors that play apart in crime our project is trying to explore what affects the severity of a crime.
 
-Using data found from historic New York Police Department (NYPD) [complaint report](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i ) we are attempting to classify the severity of a crime, or offense level, based on features such as age, race, location, time of day, and sex for the NYPD.  The data used includes all valid felony, misdemeanor, and violation crimes reported to the NYPD from 2006 to the end 2019. There are over 7 million different complaints but for this project we will only look at the last 50,000 complaints to ensure our machines can handle the data.
+Using data found from historic New York Police Department (NYPD) [complaint report](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i ) we are attempting to classify the severity of a crime, or offense level, based on features such as age, race, location, time of day, and sex for the NYPD.  The data used includes all valid felony, misdemeanor, and violation crimes reported to the NYPD from 2006 to the end of 2019. There are over 7 million different complaints but for this project we will only look at the last 50,000 complaints to ensure our machines can handle the data.
 
 We will use different classification machine learning models to learn from our data and then predict the offense level of a Misdemeanor, Felony, or Violation and see which features are the most significant in determining the severity. We think that age, race, and time of day might be factors that help predict severity more significantly than other features.
 
@@ -14,9 +14,9 @@ We will be using the following steps and have used several juypter notebooks in 
 3. Model Prediction and Evaluation - found in [Model.pynb](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/Model.ipynb)
 
 ## Data Collection and Cleaning
-As previously mentioned we used NYPD complaint data. We obtained our data using the Socrata API and got 50,000 of the results. From the inital read in from the API we have 40 different features for our data. Many of the features are redundant information, for example a written name of the station number and anoher feature is a numerical number for the same staion number, and we decided to drop them from the data. Additionally we dropped any feature that would inherintly tell us the severity of the crime. 
+As previously mentioned we used NYPD complaint data. We obtained our data using the Socrata API and got 50,000 of the results. From the inital read in from the API we have 40 different features for our data. Many of the features are redundant information, for example a written name of a station and a numerical number for the same station number, so we decided to drop them from the data. Additionally we dropped any feature that would inherently tell us the severity of the crime. 
 
-After dropping columns we turned our dates to only have the Month (1-12) and Time of day (4 different quarters). Aditionally we turned the houinsing development names into a binary 1 or 0 to indicate if the complaint took place in a housing development. We standardized all entires that were labled as 'UNKNOWN' or 'U' to NaN. Lastly we had to change our features that have ages to not include negative ages or values that were unreasonably high. 
+After dropping columns we transformed our dates to only have the Month (1-12) and Time of day (4 different quarters). Additionally we turned the housing development names into a binary 1 or 0 to indicate if the complaint took place in a housing development. We standardized all entries that were labled as 'UNKNOWN' or 'U' to NaN. Lastly, we had to change our features that have ages to not include negative ages or values that were unreasonably high. 
 
 Our final data set after all cleaning has the following 17 features:
 
@@ -69,10 +69,25 @@ For more in-depth data exploration see [ExploratoryDataAnalysis.ipynb](https://g
 
 ## Model Prediction and Evaluation
 
-THINGS TO ADD, what models did we test. 
-Comparing the models
-Most important features
-should have images
+For our classification models, we decided to use the methods of Bagging, gradient boosting, and a random forest classifier.
+
+In the end, we found that gradient boosting yielded the most accurate model, with 56% accuracy, which is a 23% mporovement over a random guess. 
+
+||precision|recall|f1-score|support|
+|:-|:-|:-|:-|:-|
+|FELONY|0.62|0.14|0.23|3127|
+|MISDEMEANOR|0.56|0.93|0.70|5279|
+|VIOLATION|0.51|0.16|0.25|1594|
+|:-|:-|:-|:-|:-|
+|accuracy|||0.56|10000|
+|macro avg|0.56|0.41|0.39|10000|
+|weighted avg|0.57|0.56|0.48|10000|
+
+
+But where our model really shines is not in prediction, because there is no practical reason to predict crime severity. Rather, looking at the importance of different features in our model can indicate what systemic and human biases exist in our police forces. From our most accurate model, we found that these were the ten features with most importance:
+![](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/Images/gbImportance.png)
+
+The sex or classification of the victim is extremely important. Also, the sex and Race of the suspect proved to be important, particularly when the suspect was black. Additionally, it is clear that location plays a significant role in the severity of a crime, with crimes on the street, as well as longitude and latitude all being highly important to our models classifications. 
 
 ## Conclusion
 
