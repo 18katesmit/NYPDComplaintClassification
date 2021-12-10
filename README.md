@@ -103,7 +103,7 @@ Our inital goal was to use different crime compliants to predict the severity of
 
 Prediction of crime severity might not be the most helpful result, and we think a future study could be conducted looking at different locations. Determining crime for different areas might be an interesting follow up to what we have done.
 
-Additionally, our evidence suggests that bias, subconscious or otherwise, still exists in our nations police forces. We urge police departments around the country to take steps towards eliminating this bias all citizens experience equal treatment. Proper trainings, procedures, and personnel reviews could achieve significant change.  
+Additionally, our evidence suggests that bias, subconscious or otherwise, still exists in our nations police forces. We urge police departments around the country to take steps towards eliminating this bias so all citizens can experience equal treatment. Proper trainings, procedures, and personnel reviews could achieve significant change.  
 
 
 
