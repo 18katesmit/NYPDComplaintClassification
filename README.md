@@ -85,6 +85,7 @@ In the end, we found that gradient boosting yielded the most accurate model, wit
 
 
 But where our model really shines is not in prediction, because there is no practical reason to predict crime severity. Rather, looking at the importance of different features in our model can indicate what systemic and human biases exist in our police forces. From our most accurate model, we found that these were the ten features with most importance:
+
 ![](https://github.com/18katesmit/NYPDComplaintClassification/blob/main/Images/gbImportance.png)
 
 The sex or classification of the victim is extremely important. Also, the sex and Race of the suspect proved to be important, particularly when the suspect was black. Additionally, it is clear that location plays a significant role in the severity of a crime, with crimes on the street, as well as longitude and latitude all being highly important to our models classifications. 
